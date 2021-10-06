@@ -1,0 +1,84 @@
+.layout {
+  background-color: rgba(16 18 27 / 40%);
+  backdrop-filter: blur(24px);
+}
+
+.sidenavScrollbar::-webkit-scrollbar {
+  width: 0;
+  background: transparent; /* hide sidenav scrollbar on Chrome, Opera and other webkit Browsers*/
+}
+
+/* hide sidenav scrollbar on Firefox, IE and Edge*/
+.sidenavScrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.main {
+  color: #f9fafb;
+  background-color: rgba(16 18 27 / 40%);
+}
+
+.main::-webkit-scrollbar {
+  width: 6px;
+  border-radius: 10px;
+}
+
+.main::-webkit-scrollbar-thumb {
+  background: rgb(1 2 3 / 40%);
+  border-radius: 10px;
+}
+
+/* width */
+.cards::-webkit-scrollbar {
+  height: 8px;
+}
+
+/* Track */
+.cards::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+.cards::-webkit-scrollbar-thumb {
+  background: #a64ca6;
+  border-radius: 10px;
+}
+.box {
+  background-image: repeating-linear-gradient(
+      12deg,
+      #6b7280,
+      #6b7280 7px,
+      transparent 7px,
+      transparent 14px,
+      #6b7280 14px
+    ),
+    repeating-linear-gradient(
+      102deg,
+      #6b7280,
+      #6b7280 7px,
+      transparent 7px,
+      transparent 14px,
+      #6b7280 14px
+    ),
+    repeating-linear-gradient(
+      192deg,
+      #6b7280,
+      #6b7280 7px,
+      transparent 7px,
+      transparent 14px,
+      #6b7280 14px
+    ),
+    repeating-linear-gradient(
+      282deg,
+      #6b7280,
+      #6b7280 7px,
+      transparent 7px,
+      transparent 14px,
+      #6b7280 14px
+    );
+  background-size: 2px 100%, 100% 2px, 2px 100%, 100% 2px;
+  background-position: 0 0, 0 0, 100% 0, 0 100%;
+  background-repeat: no-repeat;
+}
